@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient
+    (to right, rgb(18 255 0),
+     rgb(36 188 104));
+  }
+
+  .div2 {
+    position: fixed;
+    left: 37%;
+  }
+
+  .d {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .linkRent {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .linkRent1 {
+    width: 100%;
+    margin-top: 25px;
+  }
+

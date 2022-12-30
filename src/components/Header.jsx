@@ -9,23 +9,9 @@ function Header() {
         <div className={s.Header}>
             <img className={s.logo} src={logo} alt="logo" />
 
-            <div className={s.links}>
-                <Link to="/" relative="path">
-                    <button className={s.btnLink}>Главная</button>
-                </Link>
+            <div className={s.IT}>IT CUBE</div>
 
-                <Link to="/news">
-                    <button className={s.btnLink}>Новости</button>
-                </Link>
-
-                <Link to="/events">
-                    <button className={s.btnLink}>События</button>
-                </Link>
-
-                <Link to="/contacts">
-                    <button className={s.btnLink}>Контакты</button>
-                </Link>
-            </div>
+            <div className={s.khak}>KHACKATHON 2022</div>
 
             <Link className={s.LinkEntry} to='/Entry'>
                 <button className={s.textLink}>Войти</button>

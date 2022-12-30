@@ -1,35 +1,33 @@
 import s from "../src/App.module.scss";
 
 import Header from "./components/Header";
+import Panel from "./components/Panel/Panel";
 import HomePage from "./pages/HomePage/HomePage";
-import WindowAuth from "./pages/WindowAuth";
-import Registrations from "./pages/Registrations";
-import News from "./pages/News/News";
-import Footer from "./components/Footer";
-
 import Auth from "./pages/auth/Auth";
+import Regist from "./pages/regist/Regist";
+import News from "./pages/News/News";
+import Chat from "./pages/chat/Chat";
 
 import { Route, Routes } from "react-router-dom";
-// import { useState } from "react";
+import { useState } from "react";
 
 function App() {
-
   return (
     <div className={s.app}>
-      {/* <Header />
+      <Header />
+      <Panel />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <HomePage/>
-          }
-        />
+        <Route path="/" element={<HomePage />} />
 
         <Route path="/news" element={<News />} />
-      </Routes>
-      <Footer /> */}
 
-      <Auth />
+        <Route path="/Entry" element={<Auth />} />
+
+        <Route path="/adduser" element={<Regist />} />
+
+        <Route path="/chat" element={<Chat />} />
+
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,40 @@
+.Panel {
+    width: 21%;
+    height: 93vh;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(156, 189, 96);
+    display: grid;
+    align-content: space-between;
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        padding-left: 56%;
+        padding-top: 30px;
+        gap: 20px;
+      }
+    
+      .btnLink {
+        background: none;
+        border: none;
+        font-size: 28px;
+        color: white;
+        transition: 0.2s;
+        cursor: pointer;
+    
+        &:hover {
+          color: #666666;
+          text-decoration: underline;
+        }
+    }
+
+    .linka {
+        display: flex;
+        align-content: flex-end;
+        padding-left: 55%;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+}
